@@ -29,7 +29,7 @@ Esse documento traz análise de referências de conteúdo e de definições de c
 	\item{Gestão de telemetria}
 	\begin{itemize}
 		\item Esse ambiente reduz o esforço com o monitoramento dos experimentos e o registro dos dados, liberando tempo para alunos e professores investigarem a natureza dos fenômenos e aprofundarem considerações sobre os métodos experimentais. \cite{rogerio}
-		\item A funcionalidade do aparato experimental permitiu realizar, em apenas uma tarde, 96 rodadas de aquisição de dados, com variação de parâmetros e mensurações sucessivas em intervalos de 1s, o que seria impossível manualmente.
+		\item A funcionalidade do aparato experimental permitiu realizar, em apenas uma tarde, 96 rodadas de aquisição de dados, com variação de parâmetros e mensurações sucessivas em intervalos de 1s, o que seria impossível manualmente. \cite{rogerio}
 	\end{itemize}
 \end{itemize}
 
@@ -38,7 +38,7 @@ Esse documento traz análise de referências de conteúdo e de definições de c
 	\item Circuito RC
 	\begin{itemize}
 	\item No regime transitório, um circuito RC simples consiste em resistor, capacitor e fonte de tensão, onde o polo positivo do capacitor encontra-se conectado em série com o resistor, que por sua vez, é conectado ao polo positivo da fonte. Os polos negativos da fonte de tensão e do capacitor encontram-se conectados, criando uma diferença de potencial entre os terminais do capacitor. Inicialmente, a chave encontra-se aberta e o capacitor está descarregado, com tensão nula entre seus terminais. Ao se fechar a chave no instante t = 0, a tensão entre os terminais do resistor é a mesma da fonte e a tensão entre os terminais do capacitor é nula (Young; Freedman, 2009, p. 182). A partir desse instante, o processo de carga inicia-se no capacitor e a tensão entre seus terminais aumenta com o passar do tempo, na medida em que o capacitor acumula cargas positivas e cargas negativas nas suas placas condutoras, separadas por um isolante. A carga é mais rápida no início do processo e tornar-se mais lenta na proporção em que tensão no capacitor aproxima-se da tensão na fonte, até que essas tensões sejam praticamente iguais e o fluxo de corrente no circuito cesse. Logo, o capacitor estará totalmente carregado quando quando a tensão entre seus terminais for (praticamente) a mesma da fonte. A tensão sobre os terminais do capacitor, em função do tempo, é dada pela equação $V = V_{cc} \cdot (1 - e^{-\frac{t}{RC}})$, onde R é resistência, expressa em Ohms, C é a capacitância, expressa em Farads, e t é o tempo, em segundos, decorrido desde o início da carga. Logo (em condições ideais), a tensão da fonte é a assíntota da qual a tensão sobre o capacitor se aproxima, indefinidadmente (Young; Freedman, 2009, p.184) \cite{rogerio}
-	\item Esse módulo comunica-se diretamente com os transdutores – que podem ser sensores ou atuadores. A aquisição de dados se dá por meio da detecção de eventos e leitura do valor das variáveis dependentes, a partir dos sensores. Atuação, por outro lado, é como se denomina a ação sobre variáveis e eventos controlados, por meio dos atuadores. A aquisição de dados e a atuação sobre o meio físico são particulares de cada arranjo experimental. [\dots] Analogamente, no experimento-modelo descrito mais adiante, o MMC funciona como atuador ao ligar e desligar o fluxo de corrente para iniciar e terminar o experimento, e como monitor, ao ler os valores de tensão sobre os terminais do capacitor, em intervalos pré-definidos.
+	\item Esse módulo comunica-se diretamente com os transdutores – que podem ser sensores ou atuadores. A aquisição de dados se dá por meio da detecção de eventos e leitura do valor das variáveis dependentes, a partir dos sensores. Atuação, por outro lado, é como se denomina a ação sobre variáveis e eventos controlados, por meio dos atuadores. A aquisição de dados e a atuação sobre o meio físico são particulares de cada arranjo experimental. [\dots] Analogamente, no experimento-modelo descrito mais adiante, o MMC funciona como atuador ao ligar e desligar o fluxo de corrente para iniciar e terminar o experimento, e como monitor, ao ler os valores de tensão sobre os terminais do capacitor, em intervalos pré-definidos. \cite{rogerio}
 	\end{itemize}
 	\item Ensino de Física
 	\begin{itemize}
@@ -50,7 +50,7 @@ Esse documento traz análise de referências de conteúdo e de definições de c
 \begin{itemize}
 	\item{Ensino de Física}
 	\begin{itemize}
-		\item \cite{rogerio} traz a dicotomia entre experimentos farsescos ou simulacros e experimentos que enfatizem por demais os resultados esperados. No primeiro, os estudantes não aprendem de fato como a ciência funciona. No segundo, "acabam por induzir os estudantes a realizarem os experimentos ignorando a relevância do processo de investigação, o que compromete o desenvolvimento do pensamento crítico, assim como das habilidades analíticas e investigativas, dado que os estudantes assumem uma postura passiva".
+		\item A dicotomia entre experimentos farsescos ou simulacros e experimentos que enfatizem por demais os resultados esperados - no primeiro, os estudantes não aprendem de fato como a ciência funciona. No segundo, ``acabam por induzir os estudantes a realizarem os experimentos ignorando a relevância do processo de investigação, o que compromete o desenvolvimento do pensamento crítico, assim como das habilidades analíticas e investigativas, dado que os estudantes assumem uma postura passiva'' \cite{rogerio}
 	\end{itemize}
 \end{itemize}
 
@@ -69,15 +69,21 @@ Esse documento traz análise de referências de conteúdo e de definições de c
 		\begin{itemize}
 			\item de longe, a escolha mais popular para automatizar o controle e aquisição de dados em experimentos didáticos, por causa do seu preço reduzido, ambiente de programação amigável e ampla disponibilidade de bibliotecas, referências de uso e tutoriais. O Arduino UNO R3 (UNO R3), usado no presente trabalho, atende bem aos requisitos de diversos experimentos didáticos de física (Martinazzo et al., 2014; Fetzner, 2015; Calderon, 2018).  \cite{rogerio}
 			\item Um detalhe técnico importante, que contribui para a adequação do Uno R3 aos experimentos didáticos, é a linearidade e a confiabilidade na leitura e conversão de sinais analógicos, em comparação com outras placas de desenvolvimento (Monk, 2024). \cite{rogerio}
+			\item traz diversos fatores: o fato de ser \textit{open source,} altamente difundido, tendo potencial para educação; bastante econômico, e detalhes de sua arquitetura de \textit{hardware:} entradas para sensores de temperatura, luz, etc; saídas para LEDs, motores, etc. É possível citar aplicações mais relacionadas com o experimento em questão para embasar bem (posso trazer ideias de leitura analógica e digital). Eu posso citar Wi-Fi também, no caso da placa que utilizarei. Detalhes como interface com o computador e possibilidade de armazenamento local podem ser utilizados para logo a seguir eu introduzir Wi-Fi como funcionalidade que pode auxiliar telemetria (lembrar de também trazer a definição de telemetria) \cite{newton}
+			\item Fatores que podem a auxiliar o público fora da área de desenvolvimento de software: fácil acesso a bibliotecas para integrar com \textit{hardware,} além de facilidade de programação com a Arduino IDE e gravação de programas na memória \textit{flash.} \cite{newton}
 		\end{itemize}
 	\item{Raspberry Pi}
 		\begin{itemize}
 		\item O baixo custo e a robustez fazem do Raspberry Pi uma excelente escolha para o ambiente de laboratório, onde o manuseio frequente por professores e estudantes expõe os equipamentos a maiores riscos de mal funcionamento. \cite{rogerio}
-		\item Por que não só usar Raspberry Pi? "Muitos dos experimentos didáticos em física, inclusive o que é objeto do presente trabalho, demandam a leitura de um ou mais sinais analógicos. No entanto, o Raspberry Pi tem apenas portas de leitura digitais. Logo, para ler sinais analógicos, ele demanda o acréscimo de circuitos conversores, que complicam o projeto, sem acrescentar outras funcionalidades. No caso, o Arduino UNO serve como conversor analógico-digital (A/D) estável e confiável, para leitura de até seis sinais concorrentes, por meio das portas de A0 a A5. Então, a abordagem modular aqui defendida aproveita de cada plataforma o que ela tem de melhor." \cite{rogerio}
+		\item Por que não só usar Raspberry Pi? ``Muitos dos experimentos didáticos em física, inclusive o que é objeto do presente trabalho, demandam a leitura de um ou mais sinais analógicos. No entanto, o Raspberry Pi tem apenas portas de leitura digitais. Logo, para ler sinais analógicos, ele demanda o acréscimo de circuitos conversores, que complicam o projeto, sem acrescentar outras funcionalidades. No caso, o Arduino UNO serve como conversor analógico-digital (A/D) estável e confiável, para leitura de até seis sinais concorrentes, por meio das portas de A0 a A5. Então, a abordagem modular aqui defendida aproveita de cada plataforma o que ela tem de melhor.'' \cite{rogerio}
 		\end{itemize}
 	\item{Python}
 		\begin{itemize}
 			\item Ademais, projetos educacionais voltados para o ensino de programação, como o Code Club (Code Club Brasil, 2026), têm mostrado que o Python é uma linguagem didática e apropriada ao aprendizado inicial de programação com Raspberry Pi. \cite{rogerio}
+		\end{itemize}
+	\item{Coleta de dados automatizada}
+		\begin{itemize}
+		\item Acreditamos que a automatização da coleta de dados experimentais libera o aluno do trabalho árduo de leitura e anotação de dados, permitindo que concentre seu tempo nos problemas físicos. \cite{newton}
 		\end{itemize}
 \end{itemize}
 
@@ -87,7 +93,7 @@ Fale sobre o tópico.
 \section{Referências que trazem validação}
 Fale sobre o tópico.
 
-\section{Referências de forma}
+\section{Referências para me ajudar na forma da escrita}
 \begin{itemize}
 	\item \cite{rogerio} não traz código no corpo do trabalho.
 	\item{Orquestração}
@@ -98,11 +104,11 @@ Fale sobre o tópico.
 		\end{itemize}
 		\item{Protocolo de comunicação entre MMC e MGE}
 		\begin{itemize}
-			\item As constantes END\_TRANSMISSION, START\_EXPERIMENT e DURATION\_EXPERIMENT são definidas tanto no MGE quanto no MMC, de modo a estabelecer um protocolo simples de comunicação entre as duas aplicações.
+		\item As constantes END\_TRANSMISSION, START\_EXPERIMENT e DURATION\_EXPERIMENT são definidas tanto no MGE quanto no MMC, de modo a estabelecer um protocolo simples de comunicação entre as duas aplicações. \cite{rogerio}
 		\end{itemize}
 		\item{Parametrização do experimento}
 		\begin{itemize}
-			\item O conjunto de variáveis do sistema consiste em: vetor seconds\_and\_volts, cujo tipo é uma estrutura de dados (Data\_experiment) que agrupa tempo, carácter separador ("|") e tensão, indice, utilizada para percorrer o vetor, time\_ que acumula o tempo transcorrido do experimento, previous\_time que armazena o instante de tempo anterior ao tempo em time\_, volt que armazena a tensão do capacitor e signal\_code, responsável por armazenar a última mensagem recebida do MGE.
+		\item O conjunto de variáveis do sistema consiste em: vetor seconds\_and\_volts, cujo tipo é uma estrutura de dados (Data\_experiment) que agrupa tempo, carácter separador (``|'') e tensão, indice, utilizada para percorrer o vetor, time\_ que acumula o tempo transcorrido do experimento, previous\_time que armazena o instante de tempo anterior ao tempo em time\_, volt que armazena a tensão do capacitor e signal\_code, responsável por armazenar a última mensagem recebida do MGE. \cite{rogerio}
 		\end{itemize}
 	\end{itemize}
 	\item{Experimentação em Física}
@@ -111,6 +117,11 @@ Fale sobre o tópico.
 		\begin{itemize}
 			\item O experimento de conversão fotovoltaica aqui descrito foi elaborado a fim de traçar as curvas de carga de um capacitor alimentado por uma célula fotovoltaica, sob diferentes condições de iluminação. As variáveis controladas no experimento foram a temperatura de cor das lâmpadas usadas como fonte luminosa, o valore dos resistores no circuito RC e a distância entre a fonte luminosa e célula fotovoltaica. \cite{rogerio}
 			\item A definição dos valores de capacitância e resistência dos componentes utilizados no circuito RC orientou-se, a princípio, pelo tempo de duração desejado para os experimentos, visto que a duração de uma rodada experimental é determinada pelo produto entre a capacitância e a resistência, ou seja, pela constante $\tau = RC$.. No caso, cada experimento foi executado ao longo de um período equivalente a 5t, ou seja, cinco vezes a constante RC. De acordo com a função matemática apresentada na seção 2.1, ao fim desse período, em um circuito RC ideal, deve-se obter, nos terminais do capacitor, uma tensão equivalente a 99.3\% da tensão fornecida pela fonte. \cite{rogerio}
+			\item Um reservatório térmico corresponde a um sistema que pode trocar grandes quantidades de calor sem alterar sua temperatura significativamente. \cite{newton}
+		\end{itemize}
+		\item Interação entre as variáveis do experimento
+		\begin{itemize}
+			\item Pode-se observar que a quantidade de calor transferida em um intervalo de tempo é proporcional à diferença de temperatura, inversamente proporcional a sua espessura e proporcional à área. \cite{newton}
 		\end{itemize}
 		\item Realizar testes com multímetro
 		\begin{itemize}
@@ -127,6 +138,27 @@ Fale sobre o tópico.
 		\begin{itemize}
 			\item Na figura 6 são apresentados dois gráficos representativos das descobertas experimentais, gerados após a realização de duas rodadas: \cite{rogerio}
 		\end{itemize}
+		\item Valorização do trabalho por meio de adjetivos
+		\begin{itemize}
+			\item ``Outro ponto \textbf{inovador} para o experimento foi a introdução da automatização da coleta de dados com o uso do sensor de temperatura LM35 e a placa Arduino'' \cite{newton}
+			\item Possibilitando uma \textbf{efetiva} participação do aprendiz no processo de ensino-aprendizagem \cite{newton}
+		\end{itemize}
+		\item Detalhes do \textit{hardware} e \textit{software} utilizado no Arduino
+		\begin{itemize}
+			\item A plataforma Arduino opera com uma camada simples de \textit{software} que é depositada na placa, que é um \textit{bootloader,} e uma interface amigável no computador (IDE) que utiliza a linguagem baseada na linguagem C/C++, a qual é também \textit{open source.} Através do \textit{bootloader,} dispensa-se o uso de programadores para o \textit{chip} - no caso a família AVR do fabricante ATMEL - facilitando ainda mais o seu uso uma vez que não exige compiladores ou \textit{hardware} adicional. \cite{newton}
+		\end{itemize}
+		\item Mostrar a imagem do microcontrolador, opcionalmente com indicações dos componentes, mas não esquecer da fonte. \cite{newton}
+		\item Decisões de \textit{hardware} a fim de proteger o circuito
+		\begin{itemize}
+		\item No intuito de proteger o sensor LM35 e evitar curto-circuito, utilizamos um prolongador soldado e vedado com espaguete termo retrátil, figura 2. \cite{newton}
+		\end{itemize}
+		\item Interpretação detalhada dos resultados \cite{newton}
+		\item Possibilidade de intervenção no ensino básico e superior
+		\begin{itemize}
+			\item Por outro lado, a inserção do Arduino associado aos sensores se torna um grande aliado aos cursos de física experimental nos diversos níveis de ensino. \cite{newton}
+		\end{itemize}
+		\item Importante destacar limitações: solução não vai revolucionar a educação, sendo a reflexão necessária no processo de aprendizagem \cite{newton}
+		\item Destacar a união entre Física, programação e microeletrônica como parte da proposta de intervenção \cite{newton}
 	\end{itemize}
 \end{itemize}
 
@@ -135,7 +167,7 @@ Adicione aqui imagens com referências.
 
 \section{Avaliação das Referências}
 \begin{itemize}
-	\item \cite{rogerio} trouxe ideias educacionais, mas não elaborou tanto quanto eu desejava. Trouxe ideias sobre superar medições manuais, mas não trouxe referências a respeito. Não trouxe muita didática, limitando-se em grande parte ao poder didático da comparação entre teoria e prática.
+	\item \cite{rogerio} trouxe ideias educacionais, mas não elaborou tanto quanto eu desejava nesse sentido. Trouxe ideias sobre superar medições manuais, mas não trouxe referências a respeito.
 \end{itemize}
 
 \section{Conclusão}
