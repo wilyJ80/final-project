@@ -30,7 +30,7 @@ Projetar, implementar e demonstrar a funcionalidade de uma arquitetura de monito
 \end{itemize}
 
 \subsection{Critérios de busca}
-Para essa revisão, foi utilizada a base de artigos em revisão feita previamente pelo orientador. Foram priorizados artigos cujo resumo e título mais se aproximam do objetivo da pesquisa.
+Para essa revisão, foi utilizada em grande parte a base de artigos em revisão feita previamente pelo orientador. Foram priorizados artigos cujo resumo e título mais se aproximam do objetivo da pesquisa.
 
 \section{Referências que trazem relevância}
 \begin{itemize}
@@ -52,9 +52,12 @@ Para essa revisão, foi utilizada a base de artigos em revisão feita previament
 	\item{Uso de Arduino na educação}
 	\begin{itemize}
 		\item Incluir um componente de programação e desenvolvimento de sensores nos laboratórios introdutórios de ensino de Física aumenta o senso de admiração e de pertencimento que os alunos aplicam para o seu trabalho. \cite{modelfor}
+		\item Mais formas de motivação: ``em resposta à necessidade de equipar os laboratórios de física para a experimentação em Física Moderna que, ao mesmo tempo, motive os alunos através de interfaces interativas.'' \cite{kit}
 		\item Arduino como alternativa interessante a DAQs: não é uma interface passiva de aquisição de dados, podendo operar sozinho no controle de vários dispositivos. A plataforma de desenvolvimento dos programas de controle é de acesso público e gratuito. Preço acessível. Além disso, altamente difundidos, com alta oferta no mercado. \cite{aplaca}
 		\item Para fins de exemplo, fabricantes de DAQs: CIDEPE, Pasco Scientific e Phywe \cite{iniciantes}
 		\item Farta documentação sobre aplicações, além de comunidade internacional que interagem através de sites, blogs, tutoriais, eventos e fóruns, podendo auxiliar o público iniciante. \cite{aplaca}
+		\item [\dots] programação relativamente fácil, versatilidade e grande quantidade de informações disponíveis na rede mundial, seja na página oficial, seja em fóruns, com os mais variados temas. \cite{kit}
+		\item Todavia, a adoção de tal abordagem esbarra, muitas vezes, na falta de materiais nos laboratórios das escolas públicas. \cite{kit}
 	\end{itemize}
 \end{itemize}
 
@@ -70,6 +73,7 @@ Para essa revisão, foi utilizada a base de artigos em revisão feita previament
 		\item Definimos capacitância de um capacitor por uma grandeza que relaciona a quantidade de carga armazenada e a diferença de potencial propiciada nos seus terminais [\dots] Assim percebe-se que quanto maior o valor de capacitância maior será a sua capacidade de armazenamento de carga. \cite{iniciantes}
 		\item A medida que a corrente no circuito se reduz a carga no capacitor aumenta e transcorrido o tempo RC esta carga atinge 63,2\% do seu valor total EC. A Fig. 4 representa a carga no capacitor aumentando com o tempo enquanto a corrente no circuito cai exponencialmente. \cite{iniciantes}
 		\item \cite{iniciantes} sugere a possibilidade de chaveamento automático. No entanto, parece mais interessante tornar isso parametrizado para fins didáticos.
+		\item ``com um experimento de baixo custo, acessível à maioria dos profissionais e escolas da rede pública.'' \cite{kit} \textbf{Atenção: o artigo não fala especificamente do circuito RC, mas são pontuações importantes.}
 	\end{itemize}
 	\item Ensino de Física
 	\begin{itemize}
@@ -91,6 +95,10 @@ Para essa revisão, foi utilizada a base de artigos em revisão feita previament
 	\begin{itemize}
 		\item A dicotomia entre experimentos farsescos ou simulacros e experimentos que enfatizem por demais os resultados esperados - no primeiro, os estudantes não aprendem de fato como a ciência funciona. No segundo, ``acabam por induzir os estudantes a realizarem os experimentos ignorando a relevância do processo de investigação, o que compromete o desenvolvimento do pensamento crítico, assim como das habilidades analíticas e investigativas, dado que os estudantes assumem uma postura passiva'' \cite{rogerio}
 	\end{itemize}
+	\item Instrumentação em experimentação
+	\begin{itemize}
+		\item As propostas mais atuais têm dado preferência ao uso da porta serial (USB) conectada a kits experimentais controlados por microcontroladores que manipulam os sensores e se comunicam com o computador. Aqui o computador passa a enviar comandos e receber dados do microcontrolador. \cite{kit}
+	\end{itemize}
 \end{itemize}
 
 \section{Referências que embasam justificativas para a intervenção}
@@ -99,6 +107,7 @@ Para essa revisão, foi utilizada a base de artigos em revisão feita previament
 		\begin{itemize}
 			\item As placas de desenvolvimento (ou prototipagem), assim como os transdutores (sensores e atuadores) podem hoje (2026) ser adquiridos com orçamento muito modesto. De fato, é possível automatizar muitos experimentos didáticos relevantes com investimento inferior a 200 reais. \cite{rogerio}
 			\item Em outras palavras, um único Módulo Gestor pode centralizar as operações de vários Módulos Monitores Controladores. Na medida em que vários equipamentos vão sendo construídos, essa modularidade proporciona excelente economia, considerando que o preço do Raspberry Pi é de cinco a dez vezes o preço de um Arduino UNO. \cite{rogerio}
+			\item O equipamento pode ser construído com facilidade mesmo sem experiência em eletrônica e apresenta baixíssimo custo, o que viabiliza sua utilização em laboratórios didáticos de escolas públicas. \cite{kit}
 		\end{itemize}
 	\item{Experimento do circuito RC}
 		\begin{itemize}
@@ -112,6 +121,7 @@ Para essa revisão, foi utilizada a base de artigos em revisão feita previament
 			\item traz diversos fatores: o fato de ser \textit{open source,} altamente difundido, tendo potencial para educação; bastante econômico, e detalhes de sua arquitetura de \textit{hardware:} entradas para sensores de temperatura, luz, etc; saídas para LEDs, motores, etc. É possível citar aplicações mais relacionadas com o experimento em questão para embasar bem (posso trazer ideias de leitura analógica e digital). Eu posso citar Wi-Fi também, no caso da placa que utilizarei. Detalhes como interface com o computador e possibilidade de armazenamento local podem ser utilizados para logo a seguir eu introduzir Wi-Fi como funcionalidade que pode auxiliar telemetria (lembrar de também trazer a definição de telemetria) \cite{newton}
 			\item Fatores que podem a auxiliar o público fora da área de desenvolvimento de software: fácil acesso a bibliotecas para integrar com \textit{hardware,} além de facilidade de programação com a Arduino IDE e gravação de programas na memória \textit{flash.} \cite{newton}
 			\item Existem outras plataformas construídas para microcontroladores, mas o Arduino tem se destacado no cenário mundial pela facilidade de programação, versatilidade e baixo custo \cite{iniciantes}
+			\item Baixo custo reportado de um experimento reportado em \cite{kit}. Pode ser algo importante que eu possa fazer.
 		\end{itemize}
 	\item{Raspberry Pi}
 		\begin{itemize}
@@ -131,6 +141,11 @@ Para essa revisão, foi utilizada a base de artigos em revisão feita previament
 			\item A utilização do computador como agente transformador no ensino de física o ensino e aprendizagem da física, buscando diminuir esta distância tecnológica entre a escola e o estudante tem sido incansavelmente relatada também como instrumento de laboratório em que computadores são conectados a sensores permitindo fazer experimentos que dificilmente seriam realizados com os instrumentos usuais de um laboratório de ensino, podendo apresentar os resultados quase imediatamente. \cite{iniciantes}
 			\item A introdução da metodologia experimental de aquisição de dados por computador representa a possibilidade real de uso das técnicas de análise estatística de dados experimentais estudadas no curso de física e engenharias do primeiro período da graduação. Alem da melhoria da precisão dos resultados, a redução no tempo de coleta de dados e a rápida representação dos mesmos em forma de gráficos, permitem criar no laboratório de física um ambiente de construção do conhecimento físico. O estudante pode observar o fenômeno, predizer o resultado, isto é, formular hipóteses, rapidamente comparar os resultados obtidos com os previstos pelo modelo teórico, explicar possíveis diferenças entre o previsto e o observado e ainda, reformular suas hipóteses, fazer ajustes experimentais e testá-las novamente. O dinamismo desse processo provoca a curiosidade e maior interesse dos estudantes já que a aula de laboratório torna-se desafiadora: as antigas justificativas encontradas nas conclusões dos relatórios não são mais aceitas. Justificativas para um resultado ruim tais como: ``foram obtidos poucos dados'' ou, ``o instrumento de medida não estava devidamente calibrado'', sequer podem ser cogitadas. \cite{iniciantes}
 		\end{itemize}	
+	\item{Interface Gráfica}
+	\begin{itemize}
+		\item A interface gráfica é versátil e pode ser adaptada com facilidade para controlar uma grande variedade de experimentos didáticos com o uso do Arduino pois, monitora os dados numéricos enviados pela USB e enviados comandos para os acionadores. \cite{kit} Mostra o poder da comunicação bidirecional.
+		\item A interface gráfica, disponível tanto para desktops quanto para dispositivos móveis, é de fácil utilização e se mostra atrativa para os jovens estudantes do ensino médio. \cite{kit}
+	\end{itemize}
 \end{itemize}
 
 \section{Referências que dão credibilidade às afirmações}
@@ -139,7 +154,7 @@ Fale sobre o tópico.
 \section{Referências que trazem validação}
 Fale sobre o tópico.
 
-\section{Referências para me ajudar na forma da escrita}
+\section{Outras referências}
 \begin{itemize}
 	\item \cite{rogerio} não traz código no corpo do trabalho. \cite{iniciantes} os traz no apêndice ao invés do corpo do trabalho. Em geral, vale a pena trazer detalhes de código apenas ao estritamente necessário para entender o fluxo de comandos, como o uso da função digitalWrite explicado por \cite{iniciantes}
 	\item{Orquestração}
@@ -157,7 +172,7 @@ Fale sobre o tópico.
 			\item O conjunto de variáveis do sistema consiste em: vetor seconds\_and\_volts, cujo tipo é uma estrutura de dados (Data\_experiment) que agrupa tempo, carácter separador (``|'') e tensão, indice, utilizada para percorrer o vetor, time\_ que acumula o tempo transcorrido do experimento, previous\_time que armazena o instante de tempo anterior ao tempo em time\_, volt que armazena a tensão do capacitor e signal\_code, responsável por armazenar a última mensagem recebida do MGE. \cite{rogerio}
 			\item A Fig. 8 mostra aquisições com diferentes valores de delay fixados. Consideramos que a obtenção destes gráficos, pode ser uma dentre outras tarefas propostas em sala de aula visando verificar a influencia de diferentes valores de delay nos resultados obtidos. \cite{iniciantes} \textbf{Essa pontuação é muito pertinente: adiciona mais um fator didático ao processo de experimentação, além do já conhecido problema da estabilidade dos ADCs.}
 			\item Observa-se que estes valores diferem essencialmente na incerteza associada à inclinação de cada uma destas retas, reduzindo com a diminuição do tempo de delay. Este é um estudo bastante interessante que pode ser realizado e debatido em sala de aula, contribuindo no aprendizado em análise estatística e contribuição de erros em medidas físicas. \cite{iniciantes}
-			\item A Fig. 10 mostra a influencia do tempo de chaveamento nas medidas realizadas. Nota-se, como esperado, que para tempos maiores temos uma melhor visualização do processo de carga e descarga. No nosso entender esta pode ser mais uma atividade experimental proposta em sala, bastante interessante, pois possibilita ao estudante maior domínio da tecnologia e do sistema de medida utilizado. \textbf{Mais uma possibilidade de parametrização do experimento para fins didáticos.}
+			\item A Fig. 10 mostra a influencia do tempo de chaveamento nas medidas realizadas. Nota-se, como esperado, que para tempos maiores temos uma melhor visualização do processo de carga e descarga. No nosso entender esta pode ser mais uma atividade experimental proposta em sala, bastante interessante, pois possibilita ao estudante maior domínio da tecnologia e do sistema de medida utilizado. \cite{iniciantes} \textbf{Mais uma possibilidade de parametrização do experimento para fins didáticos.}
 		\end{itemize}
 	\end{itemize}
 	\item{Experimentação em Física}
